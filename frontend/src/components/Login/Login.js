@@ -58,7 +58,7 @@ function Login() {
     if (!emailError && !passwordError) {
       // If both email and password are valid, proceed with the login
       try {
-        let url = "http://localhost:3005/api/students";
+        let url = "http://localhost:3005/api/students/login";
         const response = await axios.post(url, { email, password });
         if (response.data.success) {
           console.log('Student login successful!');
