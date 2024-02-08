@@ -20,7 +20,6 @@ const LoginComponent = () => {
   const [email, setEmail] = useState("");
   const [errorField, setError] = useState("");
   const [userData, setUserData] = useState([]);
-  const [adminStatus, setAdminStatus] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -83,7 +82,6 @@ const LoginComponent = () => {
         sessionStorage.setItem("user-token", token);
         console.log(sessionStorage.getItem("UserType"));
         navigate(strReturnUrl);
-        // navigate("/dashboard", { state: { prop1: adminStatus } });
       } else {
         setError("Incorrect Password");
       }
@@ -94,8 +92,8 @@ const LoginComponent = () => {
     <div className="outer-container">
       <div className="container">
         <div className="form-container log-in-container">
-          <form className="form">
-            <h1 style={{ color: "#00796b" }}>Login</h1>
+          <form className="input-form">
+            <h1 className="heading">Login</h1>
             <div className="formgroup">
               <input
                 className="input"
@@ -121,23 +119,23 @@ const LoginComponent = () => {
                 )}
               </p>
             </div>
-            <button type="button" onClick={handleLogin}>
+            <button type="button" className="submit" onClick={handleLogin}>
               Login
             </button>
-            <div className='links'>
-               <Link to="/ForgotPassword" style={{ textDecoration: 'none', marginTop:'15px' , color: '#19725D' }}>Forgot Password</Link>
-              <label>
-                Not a Member? <Link to="/Register" style={{ textDecoration: 'none' , marginTop:'10px',color: '#19725D' }}>Sign Up</Link>
-              </label>
-              </div>
+            <Link to="/forgotpassword" className="mb-3 mt-3 links">
+              Forgot Password
+            </Link>
+            <label>
+              Not a Member? <Link to="/registration" className="mb-3 mt-3 links">SignUp</Link>{" "}
+            </label>
             {errorField && <div className="error-message">{errorField}</div>}
           </form>
         </div>
         <div className="overlay-container">
           <div className="overlay">
             <div className="overlay-panel overlay-right">
-              <h1>HouseKeeper Scheduling system</h1>
-              <p>
+              <h1 className="heading2">HouseKeeper Scheduling system</h1>
+              <p className="section">
                 This is the place where you can schedule your comfortable time
                 for cleaning purposes for HouseKeeper.
               </p>

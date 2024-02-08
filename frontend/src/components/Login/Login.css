@@ -5,13 +5,12 @@
   margin: 0;
   padding: 0;
 }
-.form-container h1 {
-	font-weight: bold;
-	color: #19725D;
-	margin-bottom: 10px;
-	
+.heading {
+  font-weight: bold;
+  margin: 0;
+  color: #00796b;
 }
-p {
+.section {
   font-size: 15px;
   font-weight: 100;
   line-height: 20px;
@@ -20,8 +19,14 @@ p {
 }
 
 
+ .links {
+  color: #19725D;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 15px 0;
+}
 
-form {
+.input-form {
   background-color: #f0f0f0;
   display: flex;
   align-items: center;
@@ -37,14 +42,14 @@ form {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
-  max-width: 400px;
+  max-width: 700px;
   min-height: 480px;
   text-decoration: none;
 }
 
 .outer-container {
   /* background: transparent; */
-  background-color: #229c80;
+  /* background-color: #965000; */
   margin: 0 auto;
   width: 100% !important;
   display: flex;
@@ -81,7 +86,7 @@ form {
   background: linear-gradient(to right, #009688, #00796b);
   background-size: cover;
   background-position: 0 0;
-  color: #fef1c7;
+  color: #ffffff;
   position: relative;
   left: -100%;
   height: 100%;
@@ -105,9 +110,6 @@ form {
   right: 0;
 }
 
-.overlay h1{
-	font-weight: bold;
-}
 .input {
   font-size: 15px;
   background-color: #eee;
@@ -120,14 +122,14 @@ form {
 }
 .input:focus {
   /* border-color: #009688; */
-  border: 1px solid #333 !important;
+  border: 1px solid #965000 !important;
 }
-.form-container button {
+.submit {
   border-radius: 20px;
   color: #fef1c7;
   font-size: 15px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 12px 45px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -138,10 +140,10 @@ form {
   transform: scale(1.012);
   transition: 0.21s;
 }
-button:enabled {
+.submit:enabled {
   background-color: #009688;
 }
-button:enabled:hover {
+.submit:enabled:hover {
   /* perspective: -1000px; */
   transform: scale(1);
   background-color: #00897b;
@@ -153,7 +155,8 @@ button:enabled:hover {
 .error-message {
   position: absolute;
   bottom: 50px;
-  color:#00796b;
+  font-size: 15px;
+  color: #00796b;
 }
 .formgroup {
   width: 100%;
@@ -169,9 +172,6 @@ button:enabled:hover {
   font-size: 20px;
 }
 
-.links{
-	text-decoration: none;
-	margin-top: 10px;
-	color: #19725D;
+.heading2{
+  font-weight: bold;
 }
-
