@@ -1,0 +1,216 @@
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    /* background: none; */
+  }
+  .outercontainer {
+    max-width: 1200px;
+    width: 100%;
+  }
+  .housekeepers-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .housekeepers-table table{
+    width: 1200px;
+    table-layout: fixed;
+  }
+
+  .housekeepers-table td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 200px;
+    max-width: 200px; /* Set a fixed width for each td element */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+    position: sticky;
+    top: 0;
+  }
+  
+  .housekeepers-table th {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #229c80;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .housekeepers-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .housekeepers-table tbody tr:hover {
+    background-color: #d4eeda;
+  }
+  
+  .housekeepers-table i {
+    cursor: pointer;
+    color: #19725d;
+    margin-right: 8px;
+  }
+  
+  .housekeepers-table i:hover {
+    color: #0056b3;
+  }
+  
+  /* Add more styles as needed */
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pagination li {
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .pagination li:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+  
+  .pagination ul li.active {
+    background-color: #19725d;
+    color: #fff;
+  }
+  
+  .viewid {
+    border: none;
+    background: none;
+    color: #19725d;
+  }
+  .viewid:hover {
+    transform: scale(1.04);
+  }
+  
+  .profile-card {
+    border: 1px solid #19725d;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+    background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+    /* width: max-content; */
+    display: flex;
+  }
+  
+  .profile-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .links{
+    border-radius: 10px;
+    color: #fef1c7;
+    font-size: 15px;
+    font-family: bold;
+    margin: 5px 10px 10px 0;
+    padding: 12px 12px;
+    box-shadow: 1px 2px 0px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .links:enabled{
+    background-color: #009688;
+  }
+  .links:enabled:hover{
+    transform: scale(1);
+    background-color: #00897b;
+    box-shadow:none;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #333; /* Add a border around the avatar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .profile-details {
+    margin-top: 20px;
+    flex-grow: 1;
+    flex-basis: 50%;
+    flex-direction: column;
+  }
+  
+  .detail {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    font-weight: bold;
+    width: 100px;
+    color: #555; /* Change label text color */
+  }
+  
+  .value {
+    margin-left: 10px;
+    color: #333; /* Change value text color */
+  }
+  
+  /* Add hover effect on labels */
+  .label:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Add transition for hover effect */
+  .label:hover,
+  .value:hover {
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  /* Additional styling */
+  
+  .editHouskeeper {
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .editHouskeeper input{
+    margin-bottom: 7px;
+    border: 1px solid #229c80; 
+  }
+.editHouskeeper .label{
+  margin-right: 3px;
+}
+  
+
+  .edit-button{
+    cursor: pointer;
+    color: #1d1e1e;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+
+
