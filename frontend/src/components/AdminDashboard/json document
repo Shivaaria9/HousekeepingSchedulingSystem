@@ -1,0 +1,213 @@
+[
+    {
+        "email": "admin@example.com",
+        "password": "Admin@123"
+    },
+    {
+        "email": "student@example.com",
+        "password": "Student@123",
+        "reqid": [
+            "3456789"
+        ]
+    },
+    {
+        "stdid": 197042,
+        "fname": "Dummy",
+        "lname": "Data",
+        "email": "ketanbhangale23@gmail.com",
+        "country": "dfghjk",
+        "state": "asaas",
+        "city": "ertyhuji",
+        "phone": 2334546789,
+        "password": "Dummy@123",
+        "gender": "male",
+        "secquestion": "What is your mother's maiden name?",
+        "secanswer": "num",
+        "roomno": 8,
+        "floorno": 5,
+        "reqid": [
+            "3456789",
+            "4567890",
+            "0913243",
+            "5426373"
+        ]
+    },
+    {
+        "stdid": 372276,
+        "fname": "Ketan",
+        "lname": "Bhangale",
+        "email": "ketanbhangale21@gmail.com",
+        "country": "India",
+        "state": "mh",
+        "city": "Mumbai",
+        "phone": 1234567890,
+        "password": "Pass@123",
+        "gender": "male",
+        "secquestion": "What is your favorite movie?",
+        "secanswer": "Tarzan",
+        "roomno": 10,
+        "floorno": 3,
+        "reqid": []
+    },
+    {
+        "stdid": 531370,
+        "fname": "Ketan",
+        "lname": "Bhangale",
+        "email": "ketan@example.com",
+        "country": "India",
+        "state": "MH",
+        "city": "Mumbai",
+        "phone": 6789987876,
+        "password": "Ketan@123",
+        "gender": "male",
+        "secquestion": "What is the name of your first pet?",
+        "secanswer": "Pet",
+        "roomno": 9,
+        "floorno": 1,
+        "reqid": [
+            "3456789",
+            "4567890",
+            "7634254"
+        ]
+    },
+    {
+        "stdid": "654321",
+        "fname": "Mia",
+        "lname": "Clark",
+        "email": "miaclark@example.com",
+        "floorno": "3",
+        "roomno": "31",
+        "country": "India",
+        "state": "Odisha",
+        "city": "Bhubaneswar",
+        "phone": "7654321098",
+        "gender": "Female",
+        "reqid": [
+            "4567890",
+            "0913243",
+            "5426373"
+        ]
+    },
+    {
+        "stdid": "678901",
+        "fname": "Sophia",
+        "lname": "Miller",
+        "email": "sophiamiller@example.com",
+        "floorno": "2",
+        "roomno": "12",
+        "country": "India",
+        "state": "Uttar Pradesh",
+        "city": "Lucknow",
+        "phone": "4321098765",
+        "gender": "Female",
+        "reqid": [
+            "3456789",
+            "4567890",
+            "0913243",
+            "5426373",
+            "3456789"
+        ]
+    },
+    {
+        "stdid": "765432",
+        "fname": "James",
+        "lname": "Young",
+        "email": "jamesyoung@example.com",
+        "floorno": "1",
+        "roomno": "2",
+        "country": "India",
+        "state": "Punjab",
+        "city": "Amritsar",
+        "phone": "6543210987",
+        "gender": "Male",
+        "reqid": [
+            "3456789",
+            "4567890"
+        ]
+    },
+    {
+        "stdid": "789012",
+        "fname": "David",
+        "lname": "Davis",
+        "email": "daviddavis@example.com",
+        "floorno": "3",
+        "roomno": "28",
+        "country": "India",
+        "state": "Gujarat",
+        "city": "Ahmedabad",
+        "phone": "3210987654",
+        "gender": "Male",
+        "reqid": [
+            "3456789",
+            "0913243",
+            "5426373"
+        ]
+    },
+    {
+        "stdid": "876543",
+        "fname": "Isabella",
+        "lname": "Walker",
+        "email": "isabellawalker@example.com",
+        "floorno": "4",
+        "roomno": "37",
+        "country": "India",
+        "state": "Haryana",
+        "city": "Gurgaon",
+        "phone": "5432109876",
+        "gender": "Female",
+        "reqid": [
+            "3456789",
+            "5426373"
+        ]
+    },
+    {
+        "stdid": "890123",
+        "fname": "Olivia",
+        "lname": "Wilson",
+        "email": "oliviawilson@example.com",
+        "floorno": "1",
+        "roomno": "7",
+        "country": "India",
+        "state": "Madhya Pradesh",
+        "city": "Bhopal",
+        "phone": "2109876543",
+        "gender": "Female",
+        "reqid": [
+            "3456789"
+        ]
+    },
+    {
+        "stdid": "901234",
+        "fname": "Daniel",
+        "lname": "Thomas",
+        "email": "danielthomas@example.com",
+        "floorno": "4",
+        "roomno": "42",
+        "country": "India",
+        "state": "West Bengal",
+        "city": "Kolkata",
+        "phone": "1098765432",
+        "gender": "Male",
+        "reqid": [
+            "3456789",
+            "4567890",
+            "0913243"
+        ]
+    },
+    {
+        "stdid": "987654",
+        "fname": "Benjamin",
+        "lname": "Lewis",
+        "email": "benjaminlewis@example.com",
+        "floorno": "5",
+        "roomno": "48",
+        "country": "India",
+        "state": "Assam",
+        "city": "Guwahati",
+        "phone": "4321098765",
+        "gender": "Male",
+        "reqid": [
+            "4567890"
+        ]
+    }
+]
