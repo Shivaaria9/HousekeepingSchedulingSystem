@@ -1,0 +1,127 @@
+.header {
+  background-color: #fef1c7;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #e0e2e5;
+}
+.logo {
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background-color: #19725d;
+  color: #f5be0b;
+  border: 1px solid #f5be0b;
+  padding: 10px 5px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.textheader {
+  position: absolute;
+  color: #19725d;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+.sidebar {
+  width: 230px;
+  min-width: 230px;
+  max-width: 230px;
+  /* background-color: #f2f2f2; */
+  margin: 10px 0;
+  padding: 20px;
+  height: calc(100vh - 160px);
+  border-right: 1px solid #e0e2e5;
+}
+.bi {
+  margin-right: 10px;
+  color: #19725d;
+  font-size: 15px;
+}
+.sidebar-item {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  /* background-color: #fff; */
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: start;
+  flex-grow: 1;
+  flex-basis: 25%;
+}
+
+.sidebar-item:hover {
+  background-color: #e6e6e6;
+}
+.mainContainer {
+  display: flex;
+}
+.mainContent {
+  flex-grow: 3;
+  flex-basis: 75%;
+  margin: 5px;
+}
+.main__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70px;
+  padding: 25px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 5px 5px 13px black, -5px -5px 13px #ffffff;
+}
+
+.card_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_inner > span {
+  font-size: 25px;
+}
+
+.container2 {
+  margin-top: none;
+  width: 1100px;
+}
+
+.c1 {
+  background-color: #ebb28b;
+  font-weight: bold;
+}
+.c2 {
+  background-color: #91ca87;
+  font-weight: bold;
+}
+.c3 {
+  background-color: #d0ce9a;
+  font-weight: bold;
+}
+.c4 {
+  background-color: #c02626;
+  font-weight: bold;
+}
+
+/* Add this to your Dashboard.css file */
+.carousel-inner .item img {
+  max-width: 100%; /* Adjust the width as needed */
+  max-height: 100%; /* Adjust the height as needed */
+  display: block;
+  margin: auto; /* Align center */
+}

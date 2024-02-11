@@ -1,0 +1,172 @@
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  /* background: none; */
+}
+.outercontainer {
+  max-width: 1200px;
+  width: 100%;
+}
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.students-table thead{
+  color: #f5f5f5;
+}
+
+.students-table td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: center;
+  max-width: 150px; /* Set a fixed width for each td element */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+}
+
+.students-table th {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #229c80;
+  font-weight: bold;
+  text-align: center;
+}
+
+.students-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.students-table tbody tr:hover {
+  background-color: #d4eeda;
+}
+
+.students-table i {
+  cursor: pointer;
+  color: #19725d;
+  margin-right: 8px;
+}
+
+.students-table i:hover {
+  color: #0056b3;
+}
+
+/* Add more styles as needed */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.pagination li:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.pagination ul li.active {
+  background-color: #19725d;
+  color: #fff;
+}
+
+.viewid {
+  border: none;
+  background: none;
+  color: #19725d;
+}
+.viewid:hover {
+  transform: scale(1.04);
+}
+
+.profile-card {
+  border: 1px solid #858b87;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+  /* width: max-content; */
+  display: flex;
+}
+
+.profile-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #fff; /* Add a border around the avatar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.profile-details {
+  margin-top: 20px;
+  flex-grow: 1;
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+.detail {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: bold;
+  width: 100px;
+  color: #555; /* Change label text color */
+}
+
+.value {
+  margin-left: 10px;
+  color: #333; /* Change value text color */
+}
+
+/* Add hover effect on labels */
+.label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Add transition for hover effect */
+.label:hover,
+.value:hover {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+/* Additional styling */
+
+.editHouskeeper {
+  flex-grow: 1;
+  flex-basis: 50%;
+}

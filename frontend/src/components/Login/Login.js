@@ -13,7 +13,6 @@ const LoginComponent = () => {
         console.error("Error fetching data:", error);
       }
     }
-
     fetchData();
   }, []);
   const [password, setPassword] = useState("");
@@ -69,7 +68,11 @@ const LoginComponent = () => {
         if (user.email === "admin@example.com") {
           sessionStorage.setItem("UserType", "Admin");
         } else {
+          sessionStorage.setItem("UserEmail", email);
+          sessionStorage.setItem("UserName", user.fname);
+          console.log(sessionStorage.getItem("UserEmail"));
           sessionStorage.setItem("UserType", "Student");
+          console.log(user.fname);
         }
         const queryString = location.search; // returns the query string from the current url
         let strReturnUrl = new URLSearchParams(queryString).get("returnUrl");
@@ -80,7 +83,6 @@ const LoginComponent = () => {
         // JWT token is the popular token generation library
         let token = "ASJDFJF87ADF8745LK4598SAD7FAJSDF45JSDLFKAS";
         sessionStorage.setItem("user-token", token);
-        console.log(sessionStorage.getItem("UserType"));
         navigate(strReturnUrl);
       } else {
         setError("Incorrect Password");
@@ -111,7 +113,7 @@ const LoginComponent = () => {
                 value={password}
                 onChange={handlePasswordChange}
               />
-              <p className="showPassword" onClick={togglePasswordVisibility}>
+              <p className="showPassword1" onClick={togglePasswordVisibility}>
                 {showPassword ? (
                   <i class="bi bi-eye-slash"></i>
                 ) : (
@@ -122,22 +124,33 @@ const LoginComponent = () => {
             <button type="button" className="submit" onClick={handleLogin}>
               Login
             </button>
-            <Link to="/forgotpassword" className="mb-3 mt-3 links">
+            <Link
+              to="/forgotpassword"
+              className="mb-3 mt-3 link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
               Forgot Password
             </Link>
-            <label>
-              Not a Member? <Link to="/registration" className="mb-3 mt-3 links">SignUp</Link>{" "}
-            </label>
-            {errorField && <div className="error-message">{errorField}</div>}
+            <p className="d-inline">
+              Not a Member?
+              <Link
+                to="/registration"
+                className="mb-3 mt-3 link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >
+                SignUp
+              </Link>
+            </p>
+            {errorField && (
+              <div className="error-message text-danger">{errorField}</div>
+            )}
           </form>
         </div>
         <div className="overlay-container">
           <div className="overlay">
             <div className="overlay-panel overlay-right">
-              <h1 className="heading2">HouseKeeper Scheduling system</h1>
+              <h1 className="heading2">HomeCare Pro</h1>
               <p className="section">
                 This is the place where you can schedule your comfortable time
-                for cleaning purposes for HouseKeeper.
+                for cleaning purpose for HouseKeeper.
               </p>
             </div>
           </div>

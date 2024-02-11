@@ -18,9 +18,8 @@
   margin: 20px 0 30px;
 }
 
-
- .links {
-  color: #19725D;
+.links {
+  color: #19725d;
   font-size: 15px;
   text-decoration: none;
   margin: 15px 0;
@@ -49,7 +48,7 @@
 
 .outer-container {
   /* background: transparent; */
-  background-color: #229c80; 
+  /* background-color: #965000; */
   margin: 0 auto;
   width: 100% !important;
   display: flex;
@@ -162,16 +161,16 @@
   width: 100%;
   position: relative;
 }
-.showPassword {
+.showPassword1 {
   position: absolute;
   right: 5px;
-  top: 5px;
+  top: 20px;
   font-size: 20px;
 }
 .bi {
   font-size: 20px;
 }
 
-.heading2{
+.heading2 {
   font-weight: bold;
 }
